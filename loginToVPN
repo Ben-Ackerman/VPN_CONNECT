@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd "${0%/*}"
+export $(grep -v '^#' .env | xargs -0)
+. ./setupLogin.sh && vpn connect vpn connect gateway.vpn.onsemi.com/mfa -s < login.txt

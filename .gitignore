@@ -1,0 +1,6 @@
+.env
+login.txt
+.DS_Store
+tokens/*
+# keep folder structure
+!tokens/.gitkeep 
